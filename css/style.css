@@ -1,0 +1,707 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By Andrea Galanti
+ * Thanks for MaterializeCSS.com
+ * Codyhouse.co
+ */
+
+
+body {
+  color: #616161;
+}
+.text {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+.text-justify {
+  text-align: justify;
+}
+.default_color{background-color: #009688 !important}
+
+.default_color_text{color: #009688 !important}
+
+.c_brown {
+  color: #6d4c41 !important;
+}
+.c_blue {
+  color: #00b0ff !important;
+}
+.c_white {
+  color: #fff !important;
+}
+.icon-block {
+  padding: 0 15px;
+}
+
+#intro{
+  padding-top: 4rem;
+}
+.intro-detail h2{
+  font-size: 1em !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+.text_h1 {
+  font-size: 1em;
+  margin: 0%;
+  padding: 0;
+  line-height: 4rem;
+  font-weight: 400 !important;
+}
+
+#work{padding-top: 4rem;}
+
+#index-banner {
+	/*min-height: 600px;*/
+	/*max-height: 864px;*/
+	position: relative;
+	background-color: #009688;
+}
+h1 {
+  font-size: 100%;
+}
+.card-reveal {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.travel {
+  padding: 16px;
+}
+.travel-card {
+}
+p {
+  font-size: 1em !important;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+#nav_f{
+	box-shadow: none !important;
+	-webkit-box-shadow:none !important;
+}
+
+.text_h {
+	padding: 5% 0;
+	font-size: 5.0em;
+	/*font-weight: 100;*/
+	color:white;
+}
+.slim {
+  font-weight: 100;
+}
+.text_sh {
+  padding: 5% 0;
+  line-height: 1.6em;
+  color: white;
+}
+
+ol li{
+  padding: 4px 0px;
+}
+.brand-logo{
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 100;
+  padding: 0;
+  letter-spacing: 7px;
+}
+
+.text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;}
+
+.span_h2 {font-weight: 300;color: #009688;}
+
+.text_b{color: #009688;}
+
+.in{font-weight: 400 !important; font-style: normal !important;}
+
+.promo i {
+	color: #009688;
+	font-size: 7rem;
+	display: block;
+}
+
+.btn {
+  background: white;
+}
+.btn:hover {
+  background: white;
+}
+
+.z-depth-0, .btn {
+  -webkit-box-shadow: 0 0px 0px 0 !important;
+  -moz-box-shadow: 0 0px 0px 0 !important;
+  box-shadow: 0 0px 0px 0 !important;
+}
+
+#committee .card-content {
+  padding: 10px;
+}
+#committee .card-content span a {
+  font-size: 1em;
+}
+.card-reveal {
+  overflow: auto;
+}
+#committee .card-title a {
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.8em;
+  color: #009688;
+}
+
+.no-transform {
+  text-transform: none !important;
+}
+
+.card-reveal p {
+  margin: 2px;
+  padding: 0;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+  /*padding: 0 0 0.5em 0em;*/
+}
+
+hr {
+  height: 1px;
+  color: #ccc;
+  background-color: #ededed;
+  border: none;
+}
+
+dl {
+  /*border: 3px double #ccc;*/
+  padding: 0px;
+}
+dt {
+  float: left;
+  clear: left;
+  /*width: auto;*/
+  /*text-align: right;*/
+  /*font-weight: bold;*/
+  color: #2e7d32;
+}
+dt:after {
+  content: ": ";
+  padding-right: 10px;
+}
+dd {
+  margin: 0 0 1em 0px;
+  /*padding: 0.6em 1em;*/
+}
+.section-with-padding {
+  padding: 2em 0;
+}
+.card-content a {color: #009688;}
+
+.card-content a:hover {color: #009688;}
+
+#work{background: rgb(247, 247, 247);}
+
+.text_pink{color:#EF9A9A;}
+
+nav ul a {
+  font-size: 1.2rem;
+  color: #FFF;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: 300;
+  padding: 0px 15px;
+}
+
+/* --------------------------------
+
+xtype
+
+-------------------------------- */
+.cd-headline.type .cd-words-wrapper {
+  vertical-align: top;
+  overflow: hidden;
+}
+.cd-headline.type .cd-words-wrapper::after {
+  /* vertical bar */
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 90%;
+  width: 1px;
+  background-color: #aebcb9;
+}
+.cd-headline.type .cd-words-wrapper.waiting::after {
+  -webkit-animation: cd-pulse 1s infinite;
+  -moz-animation: cd-pulse 1s infinite;
+  animation: cd-pulse 1s infinite;
+}
+.cd-headline.type .cd-words-wrapper.selected {
+  background-color: #FFF;
+}
+.cd-headline.type .cd-words-wrapper.selected::after {
+  visibility: hidden;
+}
+.cd-headline.type .cd-words-wrapper.selected b {
+  color: #009688;
+}
+.cd-headline.type b {
+  visibility: hidden;
+}
+.cd-headline.type b.is-visible {
+  visibility: visible;
+}
+.cd-headline.type i {
+  position: absolute;
+  visibility: hidden;
+}
+.cd-headline.type i.in {
+  position: relative;
+  visibility: visible;
+}
+
+@-webkit-keyframes cd-pulse {
+  0% {
+    -webkit-transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(0);
+    opacity: 0;
+  }
+}
+@-moz-keyframes cd-pulse {
+  0% {
+    -moz-transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  40% {
+    -moz-transform: translateY(-50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: translateY(-50%) scale(0);
+    opacity: 0;
+  }
+}
+@keyframes cd-pulse {
+  0% {
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    -moz-transform: translateY(-50%) scale(0.9);
+    -ms-transform: translateY(-50%) scale(0.9);
+    -o-transform: translateY(-50%) scale(0.9);
+    transform: translateY(-50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(0);
+    -moz-transform: translateY(-50%) scale(0);
+    -ms-transform: translateY(-50%) scale(0);
+    -o-transform: translateY(-50%) scale(0);
+    transform: translateY(-50%) scale(0);
+    opacity: 0;
+  }
+}
+
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#fff; /* change if the mask should have another color then white */
+  z-index:1200; /* makes sure it stays on top */
+}
+
+#status {
+  width:200px;
+  height:200px;
+  position:absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:50%; /* centers the loading animation vertically one the screen */
+  background-image:url(../img/status.gif); /* path to your loading animation */
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+
+
+/* iPhone, etc portrait ---- */
+@media only screen and (min-width: 320px) {
+
+  #index-banner {
+  }
+
+  .text_h {
+    padding: 4% 0;
+    font-size: 3em;
+    color: white;
+  }
+
+  .text_sh {
+    padding: 6% 0;
+    font-size: 2em;
+    color: white;
+  }
+
+  #intro {
+    padding-top: 1em;
+  }
+  .intro-detail {
+    padding-bottom: 5%;
+  }
+  .intro-detail h2{
+    font-size: 1.2em !important;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .text_h1 {
+    font-size: 1em;
+    margin: 0%;
+    padding: 0;
+    line-height: 4rem;
+    font-weight: 400 !important;
+  }
+  .text_h2 {
+    font-size: 2em;
+    margin-bottom: 2%;
+    line-height: 3rem;
+  }
+  .text_h4 {
+    font-size: 1.5em;
+    line-height: 2.2rem;
+  }
+
+  #committee .card-content span a {
+    font-size: 0.90em;
+  }
+  #committee .card-title a {
+    font-size: 0.6em;
+    line-height: 0.5em;
+    color: #009688;
+  }
+}
+
+/* iPhone, etc landscape ---- */
+@media only screen and (min-width: 480px) {
+
+  #index-banner {
+  }
+
+  .text_h {
+    padding: 4% 0;
+    font-size: 3.5em;
+    color: white;
+  }
+
+  .text_sh {
+    font-size: 2.2em;
+    color: white;
+  }
+
+  #intro {
+    padding-top: 1em;
+  }
+  .intro-detail {
+    padding-bottom: 5%;
+  }
+  .intro-detail h2{
+    font-size: 1.5em !important;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .text_h1 {
+    font-size: 1em;
+    margin: 0%;
+    padding: 0;
+    line-height: 4rem;
+    font-weight: 400 !important;
+  }
+  .text_h2 {
+    font-size: 2em;
+    margin-bottom: 2%;
+    line-height: 3rem;
+  }
+  .text_h4 {
+    font-size: 1.5em;
+    line-height: 2.5rem;
+  }
+
+  #committee .card-content span a {
+    font-size: 1em;
+  }
+  #committee .card-title a {
+    font-size: 0.8em;
+    line-height: 0.5em;
+    color: #009688;
+  }
+
+}
+
+/* iPad, tablets etc portrait ---- */
+@media only screen and (min-width: 768px) {
+
+  #index-banner {
+  }
+
+  .text_h {
+    padding: 4% 0;
+    font-size: 4em;
+    color: white;
+  }
+
+  .text_sh {
+    padding: 8% 0;
+    font-size: 2.5em;
+    color: white;
+  }
+
+  #intro {
+    padding-top: 1em;
+  }
+  .intro-detail {
+    padding-bottom: 5%;
+  }
+  .intro-detail h2{
+    font-size: 1.6em !important;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .text_h1 {
+    font-size: 1em;
+    margin: 0%;
+    padding: 0;
+    line-height: 4rem;
+    font-weight: 400 !important;
+  }
+  .text_h2 {
+    font-size: 2.2em;
+    margin-bottom: 2%;
+    line-height: 3.5rem;
+  }
+  .text_h4 {
+    font-size: 1.6em;
+    line-height: 2.5rem;
+  }
+
+  #committee .card-content span a {
+    font-size: 1em;
+  }
+  #committee .card-title a {
+    font-size: 0.9em;
+    line-height: 0.5em;
+    color: #009688;
+  }
+}
+
+/* Laptops, Desktops, etc ---- */
+@media only screen and (min-width: 1024px) {
+  #index-banner {
+  }
+
+  .text_h {
+    padding: 4% 0;
+    font-size: 4.5em;
+    color: white;
+  }
+
+  .text_sh {
+    padding: 8% 0;
+    font-size: 3em;
+    color: white;
+  }
+
+  #intro {
+    padding-top: 1em;
+  }
+  .intro-detail {
+    padding-bottom: 5%;
+  }
+  .intro-detail h2{
+    font-size: 1.8em !important;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .text_h1 {
+    font-size: 1em;
+    margin: 0%;
+    padding: 0;
+    line-height: 4rem;
+    font-weight: 400 !important;
+  }
+  .text_h2 {
+    font-size: 2.2em;
+    margin-bottom: 2%;
+    line-height: 4.2rem;
+  }
+  .text_h4 {
+    font-size: 1.6em;
+    line-height: 3rem;
+  }
+
+  #committee .card-content span a {
+    font-size: 0.90em;
+  }
+  #committee .card-title a {
+    font-size: 0.7em;
+    line-height: 0.5em;
+    color: #009688;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  #index-banner {
+  }
+
+  .text_h {
+    padding: 5% 0;
+    font-size: 5.5em;
+    color: white;
+  }
+
+  .text_sh {
+    padding: 6% 0 4% 0;
+    font-size: 3em;
+  }
+  .text-ssh h4{
+    font-size: 2em;
+  }
+
+  #intro {
+    padding-top: 1em;
+  }
+  .intro-detail {
+    padding: 5% 0 8% 0;
+  }
+  .intro-detail h2{
+    font-size: 1.8em !important;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .text_h1 {
+    font-size: 1em;
+    margin: 0%;
+    padding: 0;
+    line-height: 4rem;
+    font-weight: 400 !important;
+  }
+  .text_h2 {
+    font-size: 2.5em;
+    margin: 4% 0%;
+    line-height: 4rem;
+  }
+  .text_h4 {
+    font-size: 1.8em;
+    line-height: 3rem;
+  }
+
+  #committee .card-content span a {
+    font-size: 1em;
+  }
+  #committee .card-title a {
+    font-size: 0.9em;
+    line-height: 0.5em;
+    color: #009688;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+
+  #index-banner {
+  }
+
+  .text_h {
+    padding: 5% 0;
+    font-size: 5.5em;
+    color: white;
+  }
+
+  .text_sh {
+    font-size: 4em;
+  }
+  .text-ssh {
+    font-size: 1.2em;
+  }
+
+  #intro {
+    padding-top: 1em;
+  }
+  .intro-detail {
+    padding-bottom: 5%;
+  }
+  .intro-detail h2{
+    font-size: 2em !important;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .text_h1 {
+    font-size: 1em;
+    margin: 0%;
+    padding: 0;
+    line-height: 4rem;
+    font-weight: 400 !important;
+  }
+  .text_h2 {
+    font-size: 2.5em;
+    margin: 4% 0%;
+    line-height: 4rem;
+  }
+  .text_h4 {
+    font-size: 2em;
+    line-height: 4rem;
+  }
+
+  #committee .card-content span a {
+    font-size: 1em;
+  }
+  #committee .card-title a {
+    font-size: 0.9em;
+    line-height: 0.5em;
+    color: #009688;
+  }
+}
+
