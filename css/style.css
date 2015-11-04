@@ -53,14 +53,90 @@ body {
   line-height: 4rem;
   font-weight: 400 !important;
 }
-
+.row {
+  margin-bottom: 0;
+  padding: 20px 0px;
+}
 #work{padding-top: 4rem;}
 
 #index-banner {
-	/*min-height: 600px;*/
-	/*max-height: 864px;*/
+  background: url("../img/banner.jpg") no-repeat !important;
+  background-size: 100% !important;
 	position: relative;
 	background-color: #009688;
+}
+
+#purpose .card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+
+}
+
+#purpose .card:after {
+  content: "";
+  background-color: white;
+  /*opacity: 0.6;*/
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#index-banner {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+#index-banner::after {
+  content: "";
+  background: url("../img/monkey-3.jpg") right bottom no-repeat !important;
+  background-size: 200px !important;
+  opacity: 0.3;
+  top: 0px;
+  left: 0;
+  bottom: -0px;
+  right: 0px;
+  position: absolute;
+  z-index: -1;
+}
+
+#speakers .card {
+  background-color: transparent;
+}
+
+#speakers {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+#speakers::after {
+  content: "";
+  background: url("../img/cherry_trees1.jpg") right top no-repeat !important;
+  background-size: cover !important;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+/*
+When creating your CSS selector,
+change "brown" to something of your choosing
+*/
+.waves-effect.waves-pink .waves-ripple {
+ /* The alpha value allows the text and background color
+ of the button to still show through. */
+  background-color: rgba(136, 14, 79, 0.3);
 }
 h1 {
   font-size: 100%;
@@ -68,7 +144,11 @@ h1 {
 .card-reveal {
   width: 100%;
 }
-
+.email-contact {
+  padding: 1em;
+  /*border: 1px solid #727272;*/
+  height: auto;
+}
 iframe {
   width: 100%;
   height: 300px;
@@ -103,7 +183,7 @@ p {
   font-weight: 100;
 }
 .text_sh {
-  padding: 5% 0;
+  padding-top: 5% 0;
   line-height: 1.6em;
   color: white;
 }
@@ -122,7 +202,7 @@ ol li{
   letter-spacing: 7px;
 }
 
-.text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;}
+.text_h2 {font-weight: 100;margin-bottom: 2%; line-height: 4.5rem;}
 
 .span_h2 {font-weight: 300;color: #009688;}
 
@@ -158,6 +238,9 @@ ol li{
 .card-reveal {
   overflow: auto;
 }
+.speaker-card {
+  width: 100%;
+}
 #committee .card-title a {
   padding: 0px;
   margin: 0px;
@@ -175,7 +258,9 @@ ol li{
   font-size: 0.8em;
   font-weight: 300;
 }
-
+.bold {
+  font-weight: 400;
+}
 h1, h2, h3, h4 {
   font-weight: 300;
   /*padding: 0 0 0.5em 0em;*/
@@ -201,7 +286,7 @@ dt {
   color: #2e7d32;
 }
 dt:after {
-  content: ": ";
+  /*content: ": ";*/
   padding-right: 10px;
 }
 dd {
@@ -226,6 +311,17 @@ nav ul a {
   display: block;
   font-weight: 300;
   padding: 0px 15px;
+}
+
+ul {
+  padding: 15px;
+}
+
+ul li {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 10px 0;
+  list-style-type: square;
 }
 
 /* --------------------------------
@@ -366,7 +462,8 @@ xtype
 /* iPhone, etc portrait ---- */
 @media only screen and (min-width: 320px) {
 
-  #index-banner {
+  #index-banner::after {
+    background: none !important;
   }
 
   .text_h {
@@ -376,7 +473,7 @@ xtype
   }
 
   .text_sh {
-    padding: 6% 0;
+    padding: 22% 0 2% 0;
     font-size: 2em;
     color: white;
   }
@@ -385,7 +482,7 @@ xtype
     padding-top: 1em;
   }
   .intro-detail {
-    padding-bottom: 5%;
+    padding: 0% 0 8% 0;
   }
   .intro-detail h2{
     font-size: 1.2em !important;
@@ -401,7 +498,7 @@ xtype
     font-weight: 400 !important;
   }
   .text_h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 2%;
     line-height: 3rem;
   }
@@ -421,10 +518,8 @@ xtype
 }
 
 /* iPhone, etc landscape ---- */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-  #index-banner {
-  }
 
   .text_h {
     padding: 4% 0;
@@ -433,6 +528,7 @@ xtype
   }
 
   .text_sh {
+    padding: 22% 0 2% 0;
     font-size: 2.2em;
     color: white;
   }
@@ -441,7 +537,7 @@ xtype
     padding-top: 1em;
   }
   .intro-detail {
-    padding-bottom: 5%;
+    padding: 0% 0 8% 0;
   }
   .intro-detail h2{
     font-size: 1.5em !important;
@@ -457,7 +553,7 @@ xtype
     font-weight: 400 !important;
   }
   .text_h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 2%;
     line-height: 3rem;
   }
@@ -474,14 +570,36 @@ xtype
     line-height: 0.5em;
     color: #009688;
   }
-
+  #speakers .row .col.m4 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 630px) {
+  #committee .row .col.m4 {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1086px) {
+  #committee .row .col.m4 {
+    width: 33%;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 950px) {
+  #speakers .row .col.m4 {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1104px) {
+  #registration .row .col.l4.registration {
+    width: 100%;
+  }
+  #registration .row .col.l4.accommodation {
+    width: 50%;
+  }
 }
 
 /* iPad, tablets etc portrait ---- */
 @media only screen and (min-width: 768px) {
-
-  #index-banner {
-  }
 
   .text_h {
     padding: 4% 0;
@@ -490,8 +608,8 @@ xtype
   }
 
   .text_sh {
-    padding: 8% 0;
-    font-size: 2.5em;
+    padding: 22% 0 2% 0;
+    font-size: 2.7em;
     color: white;
   }
 
@@ -499,7 +617,7 @@ xtype
     padding-top: 1em;
   }
   .intro-detail {
-    padding-bottom: 5%;
+    padding: 0% 0 8% 0;
   }
   .intro-detail h2{
     font-size: 1.6em !important;
@@ -515,7 +633,7 @@ xtype
     font-weight: 400 !important;
   }
   .text_h2 {
-    font-size: 2.2em;
+    font-size: 2.0em;
     margin-bottom: 2%;
     line-height: 3.5rem;
   }
@@ -536,8 +654,6 @@ xtype
 
 /* Laptops, Desktops, etc ---- */
 @media only screen and (min-width: 1024px) {
-  #index-banner {
-  }
 
   .text_h {
     padding: 4% 0;
@@ -546,7 +662,7 @@ xtype
   }
 
   .text_sh {
-    padding: 8% 0;
+    padding: 22% 0 2% 0;
     font-size: 3em;
     color: white;
   }
@@ -555,7 +671,7 @@ xtype
     padding-top: 1em;
   }
   .intro-detail {
-    padding-bottom: 5%;
+    padding: 0% 0 8% 0;
   }
   .intro-detail h2{
     font-size: 1.8em !important;
@@ -592,8 +708,6 @@ xtype
 
 @media only screen and (min-width: 1200px) {
 
-  #index-banner {
-  }
 
   .text_h {
     padding: 5% 0;
@@ -602,7 +716,7 @@ xtype
   }
 
   .text_sh {
-    padding: 6% 0 4% 0;
+    padding: 22% 0 2% 0;
     font-size: 3em;
   }
   .text-ssh h4{
@@ -613,7 +727,7 @@ xtype
     padding-top: 1em;
   }
   .intro-detail {
-    padding: 5% 0 8% 0;
+    padding: 0% 0 8% 0;
   }
   .intro-detail h2{
     font-size: 1.8em !important;
@@ -630,8 +744,8 @@ xtype
   }
   .text_h2 {
     font-size: 2.5em;
-    margin: 4% 0%;
-    line-height: 4rem;
+    margin: 1% 0%;
+    line-height: 4.2rem;
   }
   .text_h4 {
     font-size: 1.8em;
@@ -650,7 +764,10 @@ xtype
 
 @media only screen and (min-width: 1400px) {
 
-  #index-banner {
+  #index-banner::after {
+    background: url("../img/monkey-3.jpg") right bottom no-repeat !important;
+    background-size: 200px !important;
+    opacity: 0.3;
   }
 
   .text_h {
@@ -660,6 +777,7 @@ xtype
   }
 
   .text_sh {
+    padding: 28% 0 1% 0;
     font-size: 4em;
   }
   .text-ssh {
@@ -670,7 +788,7 @@ xtype
     padding-top: 1em;
   }
   .intro-detail {
-    padding-bottom: 5%;
+    padding: 0% 0 8% 0;
   }
   .intro-detail h2{
     font-size: 2em !important;
@@ -704,4 +822,63 @@ xtype
     color: #009688;
   }
 }
+
+@media only screen and (min-width: 2000px) {
+
+  #index-banner {
+  }
+
+  .text_h {
+    padding: 5% 0;
+    font-size: 5.5em;
+    color: white;
+  }
+
+  .text_sh {
+    padding: 22% 0 1% 0;
+    font-size: 4em;
+  }
+  .text-ssh {
+    font-size: 1.2em;
+  }
+
+  #intro {
+    padding-top: 1em;
+  }
+  .intro-detail {
+    padding: 0% 0 8% 0;
+  }
+  .intro-detail h2{
+    font-size: 2em !important;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .text_h1 {
+    font-size: 1em;
+    margin: 0%;
+    padding: 0;
+    line-height: 4rem;
+    font-weight: 400 !important;
+  }
+  .text_h2 {
+    font-size: 2.5em;
+    margin: 4% 0%;
+    line-height: 4rem;
+  }
+  .text_h4 {
+    font-size: 2em;
+    line-height: 4rem;
+  }
+
+  #committee .card-content span a {
+    font-size: 1em;
+  }
+  #committee .card-title a {
+    font-size: 0.9em;
+    line-height: 0.5em;
+    color: #009688;
+  }
+}
+
 
