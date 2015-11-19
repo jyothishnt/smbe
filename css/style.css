@@ -162,6 +162,7 @@ iframe {
 }
 p {
   font-size: 1em !important;
+  padding: 5px 0px;
 }
 
 .no-margin {
@@ -254,7 +255,7 @@ ol li{
 
 .card-reveal p {
   margin: 2px;
-  padding: 0;
+  padding: 5px 0px;
   font-size: 0.8em;
   font-weight: 300;
 }
