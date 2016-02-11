@@ -141,6 +141,10 @@ change "brown" to something of your choosing
 h1 {
   font-size: 100%;
 }
+.section_title {
+  font-size: 2.5em;
+  font-weight: 300;
+}
 .card-reveal {
   width: 100%;
 }
@@ -171,12 +175,20 @@ p {
 .no-margin {
   margin: 0px !important;
 }
-
+.download {
+  display: flex;
+}
+.download a {
+  line-height: 2.508rem;
+  margin: 1.14rem 20px 0.912rem;
+}
 #nav_f{
 	box-shadow: none !important;
 	-webkit-box-shadow:none !important;
 }
-
+.download {
+  float: left;
+}
 .text_h {
 	padding: 5% 0;
 	font-size: 5.0em;
